@@ -20,7 +20,7 @@ To collect usernames of people who:
 -Liked a tweet
 -Retweeted a tweet
 -Followers of a person
--Following if a person
+-Following of a person
 Use the code in the [`username_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/username_collector.js) file. For example, I open the [Elon Musk following](https://twitter.com/elonmusk/following) page. Then paste the above code in the Console tab and then press Enter.
 
 ### Extract usernames
