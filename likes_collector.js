@@ -1,8 +1,13 @@
 var i = 1;
 var itemCounts = {};
 
+function exit() {
+    window.collectedLikes = itemCounts;
+    clearTimeout(window.likesCollectorLoopTimeout);
+}
+
 function loop() {      
-    setTimeout(function() { 
+    window.likesCollectorLoopTimeout = setTimeout(function() { 
         window.scrollBy(0,1000);
         
         const divs = document.querySelectorAll('div');
@@ -19,6 +24,8 @@ function loop() {
         i++;                
         if (i < 10000) {       
             loop();            
+        } else {
+            exit();
         }                      
     }, 500)
 }
