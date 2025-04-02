@@ -12,7 +12,11 @@ There are many tools available for collecting tweets. Some of these tools make u
 
 ### Tweet collector
 
-Use the code in the [`tweet_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/tweet_collector.js) file to collect tweet text, number of likes, retweets, replies, tweet ID (Status), time and username. Copy the code and paste it into the Console tab, and then press Enter. By doing this, the script will run and automatically scroll the page and collect tweets. When the scrolling is complete, or you have collected the desired amount of tweets, paste the code inside [`extract_tweets.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/extract_tweets.js) in the console tab and press Enter. This will save a file called `tweets.txt`. In the [`tweet_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/tweet_collector.js) file, the number 100000 indicates the number of times you want to scroll. The number 500 also indicates that scrolling is performed every 500 milliseconds. Adjust these values to suit your needs.
+Use the code in the [`tweet_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/tweet_collector.js) file to collect tweet text, number of likes, retweets, replies, tweet ID (Status), time and username. Copy the code and paste it into the Console tab, and then press Enter. By doing this, the script will run and automatically scroll the page and collect tweets. 
+
+To stop the collection process at any time, you can type `exit()` in the console. This will stop the automatic scrolling and make the collected data available through window variables. Otherwise, the script will continue until it reaches the scroll limit or you can use [`extract_tweets.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/extract_tweets.js) to save the collected tweets.
+
+In the [`tweet_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/tweet_collector.js) file, the number 100000 indicates the number of times you want to scroll. The number 500 also indicates that scrolling is performed every 500 milliseconds. Adjust these values to suit your needs.
 
 ### Username collector
 
@@ -21,7 +25,7 @@ To collect usernames of people who:
 -Retweeted a tweet
 -Followers of a person
 -Following of a person
-Use the code in the [`username_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/username_collector.js) file. For example, I open the [Elon Musk following](https://twitter.com/elonmusk/following) page. Then paste the above code in the Console tab and then press Enter.
+Use the code in the [`username_collector.js`](https://github.com/vahidbaghi/twitter-js-scraper/blob/main/username_collector.js) file. For example, I open the [Elon Musk following](https://twitter.com/elonmusk/following) page. Then paste the above code in the Console tab and then press Enter. You can stop the collection at any time by typing `exit()` in the console.
 
 ### Extract usernames
 
